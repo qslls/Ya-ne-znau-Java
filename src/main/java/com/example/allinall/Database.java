@@ -50,6 +50,23 @@ public class Database
             } //узнать количество вопросов
             return QuestCount;
         }
+            public int getTasksCount(Statement stt) //получить количество вопросов для первичной истории
+        {
+            int QuestCount = 0;
+            {
+                try {
+                    String GetQuestCount = "SELECT Count(*) FROM "+DataBaseName+ ".otvetsstories";
+                    ResultSet Count_output = stt.executeQuery(GetQuestCount);
+                    while (Count_output.next()) {
+                        QuestCount = Count_output.getInt("Count(*)");
+                        System.out.println("Взятие количества вопросов истории успешно");
+                    }
+                } catch (Exception exp) {
+                    System.out.println("Взятие количества вопросов истории не удалось, проверьте запрос");
+                }
+            } //узнать количество вопросов
+            return QuestCount;
+        }
         public void UpdatePrimaryStatus(Statement stt, String DataBaseName, float Result, int StudentNumber)//изменить статус прохождения первичного теста
         {
                 try {
