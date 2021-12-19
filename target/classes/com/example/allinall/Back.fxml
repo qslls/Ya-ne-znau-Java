@@ -5,63 +5,91 @@
 <?import javafx.scene.control.Label?>
 
 
-<Pane fx:id="Main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="711.0" prefWidth="1139.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="com.example.allinall.Controller">
-    <children>
-        <Text fx:id="BlueText" fill="#005aae" layoutX="358.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="453.0" text="Первичное тестирование" textAlignment="CENTER">
-            <font>
-                <Font name="System Bold" size="36.0" />
-            </font>
-        </Text>
-        <Text fx:id="QuestionNumber" fill="#5e5e5e" layoutX="521.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="84.0" text = "Вопрос №#">
-            <font>
-                <Font size="18.0" />
-            </font>
-        </Text>
-        <Label fx:id="QuestionText" alignment="CENTER" layoutX="-1.0" layoutY="117.0" prefHeight="100.0" prefWidth="1139.0" text="*Вставить текст вопроса*">
-            <font>
-                <Font name="System Bold" size="16.0" />
-            </font>
-        </Label>
-        <Text fx:id="HelpText" fill="#5e5e5e" layoutX="477.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="84.0" text="Выберите правильный ответ">
-            <font>
-                <Font size="14.0" />
-            </font>
-        </Text>
-        <RadioButton fx:id="Answer1" style="-fx-border-color: #C8C9CB;" alignment="TOP_LEFT" layoutX="55.0" layoutY="255.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="1029.0" text="RadioButton">
-            <font>
-                <Font size="13.0" />
-            </font>
-        </RadioButton>
-        <RadioButton fx:id="Answer2" style="-fx-border-color: #C8C9CB;" alignment="TOP_LEFT" layoutX="55.0" layoutY="345.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="1029.0" text="RadioButton">
-            <font>
-                <Font size="13.0" />
-            </font>
-        </RadioButton>
-        <RadioButton fx:id="Answer3" style="-fx-border-color: #C8C9CB;" alignment="TOP_LEFT" layoutX="55.0" layoutY="445.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="1029.0" text="RadioButton">
-            <font>
-                <Font size="13.0" />
-            </font>
-        </RadioButton>
-        <RadioButton fx:id="Answer4" style="-fx-border-color: #C8C9CB;" alignment="CENTER_LEFT" layoutX="55.0" layoutY="545.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="1029.0" text="RadioButton">
-            <font>
-                <Font size="13.0" />
-            </font>
-        </RadioButton>
-        <Text fx:id="PrevQuestion" fill="#005aae" layoutX="55.0" layoutY="643.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Предыдущий вопрос">
-            <font>
-                <Font size="14.0" />
-            </font>
-        </Text>
-        <Text fx:id="NextQuestion" fill="#005aae" layoutX="954.0" layoutY="643.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Следующий вопрос">
-            <font>
-                <Font size="14.0" />
-            </font>
-        </Text>
-        <Text fx:id="EndTest" fill="#005aae" layoutX="991.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Завершить тест" >
-            <font>
-                <Font size="14.0" />
-            </font>
-        </Text>
-        <Pane fx:id="Circles" layoutX="553.0" layoutY="665.0" prefHeight="8.0" prefWidth="36.0" />
-    </children>
+<?import javafx.scene.layout.AnchorPane?>
+<Pane fx:id="Background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="711.0" prefWidth="1139.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.allinall.Controller">
+    <Pane fx:id="Main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="711.0" prefWidth="1139.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<children>
+    <Text fx:id="BlueText" fill="#005aae" layoutX="358.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="453.0" text="Первичное тестирование" textAlignment="CENTER">
+        <font>
+            <Font name="System Bold" size="36.0" />
+        </font>
+    </Text>
+    <Text fx:id="QuestionNumber" fill="#5e5e5e" layoutX="521.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="84.0" text = "Вопрос №#">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Text>
+    <Label fx:id="QuestionText" alignment="CENTER" layoutX="-1.0" layoutY="117.0" prefHeight="100.0" prefWidth="1139.0" text="*Вставить текст вопроса*">
+        <font>
+            <Font name="System Bold" size="16.0" />
+        </font>
+    </Label>
+    <Text fx:id="HelpText" fill="#5e5e5e" layoutX="477.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="84.0" text="Выберите правильный ответ">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Text>
+    <RadioButton fx:id="Answer1" style="-fx-border-color: #C8C9CB;" alignment="CENTER_LEFT" layoutX="55.0" layoutY="255.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="1029.0" text="RadioButton">
+        <font>
+            <Font size="13.0" />
+        </font>
+    </RadioButton>
+    <RadioButton fx:id="Answer2" style="-fx-border-color: #C8C9CB;" alignment="CENTER_LEFT" layoutX="55.0" layoutY="345.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="1029.0" text="RadioButton">
+        <font>
+            <Font size="13.0" />
+        </font>
+    </RadioButton>
+    <RadioButton fx:id="Answer3" style="-fx-border-color: #C8C9CB;" alignment="CENTER_LEFT" layoutX="55.0" layoutY="445.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="1029.0" text="RadioButton">
+        <font>
+            <Font size="13.0" />
+        </font>
+    </RadioButton>
+    <RadioButton fx:id="Answer4" style="-fx-border-color: #C8C9CB;" alignment="CENTER_LEFT" layoutX="55.0" layoutY="545.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="1029.0" text="RadioButton">
+        <font>
+            <Font size="13.0" />
+        </font>
+    </RadioButton>
+    <Text fx:id="PrevQuestion" fill="#005aae" layoutX="55.0" layoutY="643.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Предыдущий вопрос">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Text>
+    <Text fx:id="NextQuestion" fill="#005aae" layoutX="954.0" layoutY="643.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Следующий вопрос">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Text>
+    <Text fx:id="EndTest" fill="#005aae" layoutX="991.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Завершить тест" >
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Text>
+    <Pane fx:id="CircleArea" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="28.0" prefWidth="469.0"  layoutX="480.0" layoutY="626.0"/>
+</children>
 </Pane>
+    <Pane fx:id="Result" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="711.0" prefWidth="1139.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+        <children>
+            <Pane fx:id="ResultPane" layoutX="243.0" layoutY="30.0" prefHeight="492.0" prefWidth="653.0" style="-fx-background-color: #FFFFFF;">
+                <children>
+                    <Text fx:id="ResultText" fill="#005aae" layoutX="235.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Результат">
+                        <font>
+                            <Font name="System Bold" size="36.0" />
+                        </font>
+                    </Text>
+                    <Text fx:id="ExitToMenu" fill="#005aae" layoutX="500.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Выйти в меню">
+                        <font>
+                            <Font size="14.0" />
+                        </font>
+                    </Text>
+                    <Pane fx:id="RightPane" layoutX="172.0" layoutY="107.0" prefHeight="32.0" prefWidth="309.0" style="-fx-background-color: #8a8f99;">
+                        <children>
+                            <Text fx:id="RightAnswers" layoutX="9.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0"/>
+                        </children>
+                    </Pane>
+                </children>
+            </Pane>
+        </children>
+    </Pane>
+</Pane>
+
+
